@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 :root{
     --bg1: #0084FD;
+    --bg2: #9792E4;
     --btn-bgcolor: white;
     --txt-color1: white;
+
 }
 /*common*/
 .d-flex{
@@ -30,8 +36,7 @@
 .btn{
     border-radius: 25px;
     padding: 10px 25px;
-    width: fit-content;
-    margin: 0 auto;
+    width: max-content;
 }
 img{
     width: 100%;
@@ -39,12 +44,15 @@ img{
 .center{
     text-align: center;
 }
+section{
+    padding-bottom: 125px;
+}
 /* header */
 header{
     background-color: var(--bg1);
     width: 100%;
     color: var(--txt-color1);
-    font-size: 1.3rem;
+    font-size: 1rem;
     position: fixed;
     z-index: 1;
 }
@@ -80,9 +88,13 @@ main{
 section .container .cards .txt .symbol{
     text-align: center;
 }
-.container h2,
+.cards .txt h2,
 section .container .cards .txt .symbol{
     color: var(--bg1);
+}
+.container h2{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
 }
 #big{
     text-align: left;
@@ -91,7 +103,7 @@ section .container .cards .txt .symbol{
     background-color: #B5DDFF;
     border-radius: 25px;
     margin: 10px 20px;
-    padding: 30px 20px 0 20px;
+    padding: 30px 20px 20px 20px;
 }
 .cards .txt p{
     padding: 20px 0 50px 0;
@@ -99,17 +111,29 @@ section .container .cards .txt .symbol{
 .bg-btn{
     background-color: var(--bg1);
     color: var(--txt-color1);
-    
+    margin-top: 50px;
 }
 .cont-img{
-    width: 70%;
-    margin: 0 auto;
-    margin: 0 auto -4px auto;
-    padding-top: 1rem;
+    margin: 0 auto -25px auto;
+    padding-top: 1rem; 
+    width: 80%;
 }
 .symbol{
-    font-size: 3rem;
+    font-size: 4rem;
     padding-bottom: 1rem;
+}
+/* section 2 */
+.purple{
+    background-color: var(--bg2);
+    padding: 50px 200px ;
+}
+
+.cont-img-txt2{
+    background-color: var(--btn-bgcolor);
+    border-radius: 20px;
+}
+.cont-img-txt2 div p{
+    width: 60%;
 }
 /* responsive */
 @media all and (min-width: 768px){
@@ -140,28 +164,33 @@ section .container .cards .txt .symbol{
         display: none;
     }
     .container{
-        width: 75%;
+        width: 65%;
         flex-wrap: wrap;
-        justify-content: space-between;
+        margin: 0 auto;
     }
     .direction{
         flex-direction: row;
     }
     .cards{
         width: 30%;
-        display: flex;
-        justify-content: center;
         margin: 10px 10px;
     }
     #big{
-        width: calc(100% - 31% - 40px)
+        width: calc(100% - 33% - 40px);
+        display: flex;
     }
     .cont-img{
-        width: 60%;
         align-self: flex-end;
+        flex-basis: 40%;
     }
     .txt{
-        width: 55%;
+        flex-basis: 55%;
     }
-    
+    .cont-img-txt{
+        width: 60%;
+    }
+    .cont-img-txt2{
+        width: 40%;
+        align-self: flex-end;
+    }
 }
