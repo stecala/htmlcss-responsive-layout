@@ -18,6 +18,9 @@
 .align-center{
     align-items: center;
 }
+.just-center{
+    justify-content: center;
+}
 .direction{
     flex-direction: column;
 }
@@ -26,7 +29,15 @@
 }
 .btn{
     border-radius: 25px;
-    padding: 0 25px;
+    padding: 10px 25px;
+    width: fit-content;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+.center{
+    text-align: center;
 }
 /* header */
 header{
@@ -34,6 +45,8 @@ header{
     width: 100%;
     color: var(--txt-color1);
     font-size: 1.3rem;
+    position: fixed;
+    z-index: 1;
 }
 header .container{
     padding: 10px 20px;
@@ -58,7 +71,60 @@ header .container{
     color: black;
     background-color: var(--btn-bgcolor);
 }
+/* main */
+/* section 1 */
+main{
+    padding-top: 90px;
+}
+.container h2,
+section .container .cards .txt .symbol{
+    color: #0D8AFD;
+    text-align: center;
+}
+.cards{
+    background-color: #B5DDFF;
+    border-radius: 25px;
+    margin: 10px 20px;
+    padding: 30px 20px 0 20px;
+}
+.cards .txt p{
+    padding: 20px 0 50px 0;
+}
+.bg-btn{
+    background-color: var(--bg1);
+    color: var(--txt-color1);
+    
+}
+.cont-img{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+.symbol{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
 /* responsive */
+@media all and (min-width: 768px){
+    .cards{
+        width: 30%;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .direction{
+        flex-direction: row;
+    }
+    .cards{
+        width: 28%;
+        margin: 10px 20px;
+    }
+    #big{
+        width: 61.5%;
+    }
+}
+
 @media all and (min-width: 992px){
     .menu{
         display: inline-block;
@@ -68,8 +134,18 @@ header .container{
     }
     .container{
         width: 75%;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .direction{
         flex-direction: row;
+    }
+    .cards{
+        width: 31%;
+        display: flex;
+        margin: 10px 10px;
+    }
+    #big{
+        width: 64.5%;
     }
 }
