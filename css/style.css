@@ -76,10 +76,16 @@ header .container{
 main{
     padding-top: 90px;
 }
+.container h2:not(:first-child),
+section .container .cards .txt .symbol{
+    text-align: center;
+}
 .container h2,
 section .container .cards .txt .symbol{
-    color: #0D8AFD;
-    text-align: center;
+    color: var(--bg1);
+}
+#big{
+    text-align: left;
 }
 .cards{
     background-color: #B5DDFF;
@@ -142,11 +148,20 @@ section .container .cards .txt .symbol{
         flex-direction: row;
     }
     .cards{
-        width: 31%;
+        width: 30%;
         display: flex;
+        justify-content: center;
         margin: 10px 10px;
     }
     #big{
         width: calc(100% - 31% - 40px)
     }
+    .cont-img{
+        width: 60%;
+        align-self: flex-end;
+    }
+    .txt{
+        width: 55%;
+    }
+    
 }
