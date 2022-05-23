@@ -98,6 +98,7 @@ section .container .cards .txt .symbol{
 .cont-img{
     width: 70%;
     margin: 0 auto;
+    margin: 0 auto -4px auto;
     padding-top: 1rem;
 }
 .symbol{
@@ -120,8 +121,8 @@ section .container .cards .txt .symbol{
         width: 28%;
         margin: 10px 20px;
     }
-    #big{
-        width: 61.5%;
+    #big{ 
+        width: calc(100% - 28% - 80px );
     }
 }
 
@@ -146,6 +147,6 @@ section .container .cards .txt .symbol{
         margin: 10px 10px;
     }
     #big{
-        width: 64.5%;
+        width: calc(100% - 31% - 40px)
     }
 }
