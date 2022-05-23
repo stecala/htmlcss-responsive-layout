@@ -18,11 +18,15 @@
 .align-center{
     align-items: center;
 }
+.direction{
+    flex-direction: column;
+}
 .container{
     margin: 0 auto;
 }
 .btn{
-    border-radius: 15px;
+    border-radius: 25px;
+    padding: 0 25px;
 }
 /* header */
 header{
@@ -64,5 +68,8 @@ header .container{
     }
     .container{
         width: 75%;
+    }
+    .direction{
+        flex-direction: row;
     }
 }
