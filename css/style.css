@@ -12,7 +12,6 @@ body{
     --bg2: #9792E4;
     --btn-bgcolor: white;
     --txt-color1: white;
-
 }
 /*common*/
 .d-flex{
@@ -30,6 +29,9 @@ body{
 .direction{
     flex-direction: column;
 }
+.wrap{
+    flex-wrap: wrap;
+}
 .container{
     margin: 0 auto;
 }
@@ -45,7 +47,7 @@ img{
     text-align: center;
 }
 section{
-    padding-bottom: 125px;
+    padding-bottom: 80px;
 }
 /* header */
 header{
@@ -85,11 +87,11 @@ main{
     padding-top: 90px;
 }
 .container h2:not(:first-child),
-section .container .cards .txt .symbol{
+.card-symbol .container .cards .txt .symbol{
     text-align: center;
 }
 .cards .txt h2,
-section .container .cards .txt .symbol{
+.card-symbol .container .cards .txt .symbol{
     color: var(--bg1);
 }
 .container h2{
@@ -102,7 +104,8 @@ section .container .cards .txt .symbol{
 .cards{
     background-color: #B5DDFF;
     border-radius: 25px;
-    margin: 10px 20px;
+    margin: 20px auto;
+    width: 90%;
     padding: 30px 20px 20px 20px;
 }
 .cards .txt p{
@@ -123,17 +126,215 @@ section .container .cards .txt .symbol{
     padding-bottom: 1rem;
 }
 /* section 2 */
+.container2{
+    margin: 0 auto;
+}
 .purple{
     background-color: var(--bg2);
-    padding: 50px 200px ;
 }
-
-.cont-img-txt2{
+.cont-img-txt{
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.bg-card{
     background-color: var(--btn-bgcolor);
     border-radius: 20px;
 }
-.cont-img-txt2 div p{
-    width: 60%;
+.purple .container2 .cont-img-txt div h2{
+    text-align: center;
+    padding: 50px 0; 
+}
+.purple .container2 .cont-img-txt .txt-area{
+    color: var(--txt-color1);
+}
+.purple .container2 .cont-img-txt .txt-area2{
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+}
+.anchor{
+    width: 25px;
+    height: 25px;
+    background-color: var(--bg2); 
+    border-radius: 100%;
+    margin: 20px auto;
+}
+/* section 3 */
+.testimonial{ 
+    text-align: center;
+}
+.testimonial .container2 h2{
+    color: var(--bg2);
+    padding: 25px;
+}
+.small-title{
+    padding: 75px 25px 0 25px; 
+    font-size: 1.2rem;
+}
+.testimonial .container2 p{
+    padding: 0 25px 25px 25px;
+}
+.card-test{
+    background-color: var(--bg2);
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.cont-card{
+    margin: 0 auto;
+    color: var(--txt-color1);
+    text-align: center;
+    padding: 25px;
+}
+.img-test{
+    padding: 20px 25px; 
+    margin: 0 auto;
+}
+.cont-card .card-test h2{
+    color: var(--txt-color1);
+    padding: 25px 0;
+}
+.img-test img{
+    border-radius: 100%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+.txt-test{
+    line-height: 40px;
+}
+/* section 4 */
+.benefits{
+    margin: 0 auto;
+}
+.benefits h2:first-child{
+    width: 90%;
+    color: var(--txt-color1);
+    padding: 50px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.benefits .box h1,
+.benefits .box h2{
+    color: var(--bg2);
+}
+.benefits .box h1{
+    padding: 20px 0;
+    font-size: 3rem;
+}
+.benefits .box h2{
+    padding-bottom: 20px;
+}
+.box{
+    width: 90%;
+    margin: 0px auto 20px auto;
+    background-color: var(--txt-color1);
+    padding: 20px;
+    border-radius: 15px;
+}
+.bg-btn2{
+    background-color: var(--bg2);
+    border-radius: 15px;
+    text-align: center;
+    color: var(--txt-color1);
+    margin: 15px 0;
+    display: inline-block;
+    padding: 10px 60px;
+}
+.txt-box{
+    line-height: 30px;
+}
+/* section 5 */
+.cont-about{
+    width: 90%;
+    margin: 0 auto;
+}
+.about-us .cont-about .cont-txt h2{
+    color: var(--bg2);
+    padding: 50px 0;
+    font-size: 2rem;
+}
+.txt-about{
+    line-height: 30px;
+}
+.bio{
+    padding: 50px 0;
+}
+.bio-img{
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+    position: relative;
+}
+.bio-img img{
+    object-fit: cover;
+    border-radius: 100%;
+}
+.bio-img .fa-quote-left{
+    position: absolute;
+    top: 0;
+    left: 73%;
+    font-size: 3.5rem;
+    color: var(--bg2);
+}
+.bio h2{
+    color: var(--bg2);
+}
+.bio .bg-btn2{
+    margin-top: 25px;
+    font-size: 0.8rem;
+}
+/* sezione 6 */
+.free{
+    color: var(--txt-color1);
+}
+.cont-free{
+    text-align: center;
+    width: 90%;
+    padding: 25px 0;
+    margin: 0 auto;
+}
+.cont-free h2{
+    padding: 25px 0;
+}
+
+.itsfree{
+    color: #FDC15F;
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+.bg-btn3{
+    color: var(--bg2);
+    background-color: var(--txt-color1);
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px 60px;
+    display: inline-block;
+}
+.small-txt{
+    padding: 25px 0;
+    font-size: 0.7rem;
+}
+.small-txt span{
+    text-decoration: underline;
+}
+/* footer */
+footer{
+    background-color: #333333;
+    color: var(--txt-color1);
+    padding: 25px;
+}
+.footer-txt{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 25px 0;
+}
+.footer-txt a{
+    color: var(--bg2);
 }
 /* responsive */
 @media all and (min-width: 768px){
@@ -147,12 +348,52 @@ section .container .cards .txt .symbol{
     .direction{
         flex-direction: row;
     }
+    .purple .direction{
+        flex-direction: column;
+    }
     .cards{
         width: 28%;
-        margin: 10px 20px;
+        margin: 10px 20px; 
     }
     #big{ 
         width: calc(100% - 28% - 80px );
+    }
+    .testimonial .direction{
+        flex-direction: column;
+    }
+    /* sezione 4 */
+    .cont-box{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .benefits .direction{
+        flex-direction: row;
+    }
+    .box{
+        width: calc(100% / 2 - 1rem);
+    }
+    /* sezione 5 */
+    .cont-about{
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .about-us .direction{
+        flex-direction: row;
+    }
+    .cont-txt{
+        width: 55%;
+    }
+    .bio{
+        width: 40%;
+    }
+    /* sezione 6 */
+    .cont-free p{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .footer-txt{
+        width: 400px;
     }
 }
 
@@ -168,15 +409,13 @@ section .container .cards .txt .symbol{
         flex-wrap: wrap;
         margin: 0 auto;
     }
-    .direction{
-        flex-direction: row;
-    }
     .cards{
-        width: 30%;
-        margin: 10px 10px;
+        width: calc(30% - 24px);
+        margin-bottom: 20px;
     }
     #big{
-        width: calc(100% - 33% - 40px);
+        width: calc(64% - 24px);
+        margin-bottom: 20px;
         display: flex;
     }
     .cont-img{
@@ -191,6 +430,57 @@ section .container .cards .txt .symbol{
     }
     .cont-img-txt2{
         width: 40%;
-        align-self: flex-end;
+    }
+    .container2{
+        width: 65%;
+        margin: 0 auto;
+    }
+    .cont-img2{
+        width: 60%;
+    }
+    .cont-img3{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .bg-card{
+        width: 40%;
+        margin-top: 150px;
+    }
+    .purple .direction{
+        flex-direction: row;
+    }
+    .testimonial .direction{
+        flex-direction: column;
+    }
+    .cont-card{
+        width: 65%;
+    }
+    .card-test{
+        display: flex;
+        align-items: center;
+    }
+    .img-test{
+        width: 30%;
+    }
+    .txt-test{
+        padding: 50px 20px;
+        width: 70%;
+    }
+    /* sezione 4 */
+    .cont-box{
+        width: 65%;
+        margin: 0 auto;
+    }
+    .box{
+        width: calc(100% / 3 - 1rem);
+    }
+    /* sezione 5 */
+    .cont-about{
+        width: 65%;
+    }
+    /* sezione 6 */
+    .cont-free p{
+        width: 40%;
+        margin: 0 auto;
     }
 }
